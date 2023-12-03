@@ -1,10 +1,12 @@
-console.log("Hello")
-console.log("TSC TEST")
-console.log("Compiling Test")
+class Sorter {
 
+    constructor(public collection: number[]){
+    }
 
-const typeSomething = () => {
-    console.log('Please Work')
+    sort(): void{
+
+    }
 }
 
-typeSomething()
+const sorter = new Sorter([10, -2, 4, -3])
+sorter.sort()
