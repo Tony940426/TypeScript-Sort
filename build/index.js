@@ -19,8 +19,6 @@ class Sorter {
                     }
                 }
                 if (typeof this.collection === 'string') {
-                    this.collection.
-                    ;
                 }
                 //If collection is a group of string
                 //type of this.collection  === 'string', this format is used if the data is primative
