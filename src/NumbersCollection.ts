@@ -16,6 +16,3 @@ export class NumbersCollection {
         this.data[rightIndex] = lefthand
     }
 }
-
-const newNumbers = new NumbersCollection([1,4,6,10])
-console.log(newNumbers.length)
