@@ -3,6 +3,8 @@ interface Sortable {
     compare(leftIndex: number, rightIndex: number): boolean;
     swap(leftIndex: number, rightIndex: number): void;
 }
+//interface doesn't guarantee that the methods are returning the right values. It only checks if it 
+//is only there.
 
 export class Sorter {
     constructor(public collection: Sortable){}
