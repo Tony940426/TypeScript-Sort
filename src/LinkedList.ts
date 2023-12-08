@@ -80,7 +80,6 @@ export class LinkedClass {
         while(node){
             console.log(node.data)
             node = node.next
-            console.log(Test)
         }
     }
 }
