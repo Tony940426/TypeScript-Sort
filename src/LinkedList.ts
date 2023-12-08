@@ -42,5 +42,45 @@ export class LinkedClass {
         if(!this.head){
             throw new Error('Index Out of Bounds')
         }
+        let counter = 0;
+        let node: Node | null = this.head;
+        while(node) {
+            if(counter === index) {
+                return node;
+            }
+            counter ++ 
+            node = node.next;
+        }
+        throw new Error ('Index Our of Bounds')
+    }
+
+    compare(leftIndex: number, rightIndex: number): boolean {
+        if(!this.head){
+            throw new Error('List is Empty')
+        }
+
+        return this.at(leftIndex).data > this.at(rightIndex).data
+    }
+
+    swap(leftIndex: number, rightIndex: number){
+        const leftNode = this.at(leftIndex);
+        const rightNode = this.at(rightIndex);
+
+        const leftHand = leftNode.data;
+        leftNode.data = rightNode.data;
+        rightNode.data = leftHand;
+    }
+
+    print(): void {
+        if(!this.head){
+            return;
+        }
+
+        let node: Node | null = this.head;
+        while(node){
+            console.log(node.data)
+            node = node.next
+            console.log(Test)
+        }
     }
 }
