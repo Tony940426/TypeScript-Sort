@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sorter = void 0;
+//interface doesn't guarantee that the methods are returning the right values. It only checks if it 
+//is only there.
 class Sorter {
     constructor(collection) {
         this.collection = collection;
