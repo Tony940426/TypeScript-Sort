@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.LinkedClass = void 0;
+const Sorter_1 = require("./Sorter");
 class Node {
     //referencing the next node. Default value of null.
     constructor(data) {
@@ -8,8 +9,9 @@ class Node {
         this.next = null;
     }
 }
-class LinkedClass {
+class LinkedClass extends Sorter_1.Sorter {
     constructor() {
+        super(...arguments);
         this.head = null;
     }
     add(data) {
